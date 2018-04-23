@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dsPubs xmlns="http://www.tempuri.org/dsPubs.xsd">
+	<xs:schema id="dsPubs" targetNamespace="http://www.tempuri.org/dsPubs.xsd" xmlns:mstns="http://www.tempuri.org/dsPubs.xsd" xmlns="http://www.tempuri.org/dsPubs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+		<xs:element name="dsPubs" msdata:IsDataSet="true">
+			<xs:complexType>
+				<xs:choice minOccurs="0" maxOccurs="unbounded">
+					<xs:element name="authors">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="au_id" type="xs:string" />
+								<xs:element name="au_lname" type="xs:string" />
+								<xs:element name="au_fname" type="xs:string" />
+								<xs:element name="au_phone" type="xs:string" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+			</xs:complexType>
+			<xs:unique name="Constraint1" msdata:PrimaryKey="true">
+				<xs:selector xpath=".//mstns:authors" />
+				<xs:field xpath="mstns:au_id" />
+			</xs:unique>
+		</xs:element>
+	</xs:schema>
+	<authors>
+		<au_id>172-32-1176</au_id>
+		<au_lname>West</au_lname>
+		<au_fname>Paul</au_fname>
+		<au_phone>408 555-0123</au_phone>
+	</authors>
+	<authors>
+		<au_id>213-46-8915</au_id>
+		<au_lname>Gray</au_lname>
+		<au_fname>Chris</au_fname>
+		<au_phone>415 555-0120</au_phone>
+	</authors>
+</dsPubs>
