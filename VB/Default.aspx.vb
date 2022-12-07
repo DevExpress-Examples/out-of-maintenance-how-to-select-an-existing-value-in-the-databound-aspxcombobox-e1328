@@ -22,7 +22,7 @@ Partial Public Class TestPage
 		'By value
 		Dim iterator As Integer = 0
 		For iterator = 0 To ASPxComboBox1.Items.Count - 1
-			Dim currentItem As DevExpress.Web.ASPxEditors.ListEditItem = ASPxComboBox1.Items(iterator)
+			Dim currentItem As DevExpress.Web.ListEditItem = ASPxComboBox1.Items(iterator)
 			If currentItem.Value.ToString() = "213-46-8915" Then
 				ASPxComboBox1.SelectedItem = currentItem
 			End If

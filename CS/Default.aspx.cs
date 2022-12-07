@@ -20,7 +20,7 @@ partial class TestPage : System.Web.UI.Page {
         //By value
         int iterator = 0;
         for (iterator = 0; iterator < ASPxComboBox1.Items.Count; iterator++) {
-            DevExpress.Web.ASPxEditors.ListEditItem currentItem = ASPxComboBox1.Items[iterator];
+            DevExpress.Web.ListEditItem currentItem = ASPxComboBox1.Items[iterator];
             if (currentItem.Value.ToString() == "213-46-8915") {
                 ASPxComboBox1.SelectedItem = currentItem;
             }
